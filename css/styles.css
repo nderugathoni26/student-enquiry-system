@@ -1,0 +1,169 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Sidebar Styles */
+.bg-dark {
+    background-color: rgba(161, 98, 98, 0.82) !important;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100%;
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.nav-item {
+    margin-bottom: 10px;
+}
+
+.nav-link {
+    color: #ffffff !important;
+}
+
+.nav-link:hover {
+    color: #adb5bd !important;
+}
+
+/* Main Content Styles */
+.container-fluid {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+header {
+    background-color:  rgba(161, 98, 98, 0.002);
+    padding: 20px;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+/* Card Styles */
+.card {
+    margin-bottom: 20px;
+}
+
+.card-body {
+    padding: 20px;
+    box-sizing: content-box;
+}
+
+.card-title {
+    font-size: 1.25rem;
+}
+
+/* List Group Styles */
+.list-group-item {
+    border: 1px solid #dee2e6;
+    padding: 15px;
+}
+
+.list-group-item strong {
+    display: block;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    border-radius: 0.25rem;
+}
+
+textarea.form-control {
+    resize: vertical;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    border: none;
+}
+
+.btn-info:hover {
+    background-color: #138496;
+}
+
+/* Message and Reply Section */
+.card-body .list-group-item {
+    position: relative;
+}
+
+.card-body .list-group-item .form-group {
+    margin-top: 10px;
+}
+
+.card-body .list-group-item .btn-info {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.card-body .list-group-item .mt-2 {
+    margin-top: 10px;
+}
+
+.card-body .list-group-item .mt-3 {
+    margin-top: 15px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container-fluid {
+        margin-left: 0;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+}

@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color:grey;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar but allow scrolling */
+.container {
+    overflow: scroll; /* or overflow-y: scroll for vertical scrolling */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+header {
+background-image:linear-gradient(rgba(255, 255, 255, 0),rgba(0,0,0,0.7)), url('../images/graduate.jpg'); 
+background-size: cover; 
+background-position: center; 
+background-repeat: no-repeat; 
+height: 100vh; 
+color:black;
+font-weight: bold;
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center; 
+}
+nav {
+position: fixed; 
+top: 0; 
+left: 0; 
+width: 100%; 
+display: flex;
+justify-content: space-between;
+padding: 20px 50px;
+background-color:  rgba(161, 98, 98, 0.906); 
+z-index: 1000; 
+}
+
+p{
+
+font-size: larger;
+font-weight: bolder;
+line-height: 1.5;
+
+}
+
+h1{
+color:rgb(170, 83, 83);
+font-weight: bolder;
+font-size: x-large;
+}
+h2{
+color: black;
+}
+
+.contact-description{
+color: black;
+}
+a{
+text-decoration: none;
+}
+a:hover{
+text-decoration: none;
+
+}
+.cta-btn:hover{
+background-color:rgb(161, 98, 98);
+}
+
+.logo h1 {
+    font-size: 28px;
+    color: black;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero-section h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
+.cta-btn {
+    padding: 12px 30px;
+    background-color: #6d7d7e;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 18px;
+}
+
+.features, .about-us {
+    padding: 60px 100px;
+    text-align: center;
+}
+
+.features h2, .about-us h2 {
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.feature-box {
+    background: rgba(161, 98, 98, 0.527);
+    padding: 30px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.feature-box i {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: wheat;
+}
+
+.about-us {
+    background-color:rgba(255, 255, 255, 0.822);
+}
+
+.about-us p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+#contact-us {
+padding: 60px 20px;
+background-color: #f4f4f469;
+text-align: center;
+font-family: 'Arial', sans-serif;
+}
+
+#contact-us h2 {
+font-size: 36px;
+color: #333;
+margin-bottom: 20px;
+text-transform: uppercase;
+letter-spacing: 2px;
+}
+
+#contact-us .contact-description {
+font-size: 18px;
+color: #555;
+margin-bottom: 30px;
+max-width: 800px;
+margin-left: auto;
+margin-right: auto;
+line-height: 1.6;
+}
+
+#contact-us .contact-form {
+max-width: 600px;
+margin-left: auto;
+margin-right: auto;
+background-color:rgba(161, 98, 98, 0.527);
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact-us .form-group {
+margin-bottom: 15px;
+text-align: left;
+}
+
+#contact-us .form-group label {
+display: block;
+font-size: 16px;
+color: #333;
+margin-bottom: 5px;
+}
+
+#contact-us .form-group input,
+#contact-us .form-group textarea {
+width: 100%;
+padding: 10px;
+border: 1px solid #ddddddad;
+border-radius: 4px;
+font-size: 16px;
+color:black;
+}
+
+#contact-us .form-group textarea {
+resize: vertical;
+}
+
+#contact-us .btn-submit {
+background-color: #6d7d7e;
+color: white;
+border: none;
+padding: 10px 20px;
+font-size: 16px;
+cursor: pointer;
+border-radius: 4px;
+transition: background-color 0.3s;
+}
+
+#contact-us .btn-submit:hover {
+background-color: #45a049;
+}
+
+.contact-card {
+margin-top: 40px;
+padding: 30px;
+background-color: rgba(161, 98, 98, 0.527);
+border-radius: 8px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+max-width: 600px;
+margin-left: auto;
+margin-right: auto;
+text-align: left;
+}
+
+.contact-card h3 {
+font-size: 24px;
+color: #333;
+margin-bottom: 10px;
+}
+
+.contact-card p {
+font-size: 16px;
+color: #555;
+margin-bottom: 20px;
+}
+
+.social-media-card {
+margin-top: 20px;
+}
+
+.social-media-card {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.social-icon {
+display: inline-block;
+margin: 0 10px;
+}
+
+.social-icon img {
+width: 40px;
+height: 40px;
+transition: opacity 0.3s;
+}
+
+.social-icon img:hover {
+opacity: 0.7;
+}
+
+/* Add this CSS to your stylesheet */
+.feature-box {
+transition: transform 0.2s ease; /* Smooth transition */
+}
+
+.feature-box:hover {
+animation: bounce 0.5s; /* Trigger bounce animation on hover */
+}
+div.at-container {
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100%;
+}
+.at-item {
+color: #3079ed; font-weight:bold; font-size:3em;
+
+animation-name: text-focus-in;
+animation-duration: 1.2s;
+animation-timing-function: ease-in;
+animation-delay: 0.4s;
+animation-iteration-count: 1;
+animation-direction: normal;
+animation-fill-mode: none;
+    
+/* shorthand
+animation: text-focus-in 1.2s ease-in 0.4s 1 normal none;*/
+}
+@keyframes text-focus-in {
+    
+0% {
+    filter:blur(12px);
+    opacity:0;
+}
+100% {
+    filter:blur(0);
+    opacity:1;
+}
+}
+
+
+/* Keyframes for bounce effect */
+@keyframes bounce {
+0%, 24%, 54%, 84%, 100% {
+transform: translateY(0);
+}
+40% {
+transform: translateY(-10px); /* Move up */
+}
+60% {
+transform: translateY(-5px); /* Move down */
+}
+}
+
+
+footer {
+    background-color: rgb(161, 98, 98);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+@media(max-width: 768px) {
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Loader Styling */
+.loader {
+display: none; /* Hidden by default */
+position: fixed;
+z-index: 9999; /* Make sure it appears on top */
+top: 50%;
+left: 50%;
+width: 80px;
+height: 80px;
+margin-left: -40px; /* Center horizontally */
+margin-top: -40px;  /* Center vertically */
+border: 8px solid rgba(0, 0, 0, 0.1);
+border-top: 8px solid #3498db; /* Blue spinning part */
+border-radius: 50%;
+animation: spin 1s linear infinite;
+}
+
+/* Animation for spinning */
+@keyframes spin {
+0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+}
+

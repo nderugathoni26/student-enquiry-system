@@ -1,0 +1,148 @@
+ /* Existing CSS Styles */
+ body {
+    background-image: url('../images/studentpanel.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    background-color: rgba(161, 98, 98, 0.9);
+    padding: 20px 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    padding: 10px 15px;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.navbar-nav .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    border-radius: 4px;
+}
+
+.card {
+    border-radius: 8px;
+    transition: transform 0.2s;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.187);
+    margin-top: 95px;
+    margin-bottom: 20px;
+    min-height: 400px;
+}
+
+.card-header {
+    background-color: rgba(161, 98, 98, 0.769);
+    padding: 20px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.card-body {
+    background-color: rgba(255, 255, 255, 0.806);
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background-color: rgb(161, 98, 98);
+    border: none;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: rgba(161, 98, 98, 0.8);
+}
+
+.form-control {
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    display: block;
+    background-color: rgb(161, 98, 98);
+    width: 40%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(161, 98, 98);
+    text-align: center;
+    font-size: large;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#send-feedback .card-body,
+#view-feedback .card-body {
+    max-height: 450px;
+    overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.9rem;
+    }
+}
+
+/* Replied feedback styling */
+#view-feedback ul {
+    padding-left: 0;
+}
+
+#view-feedback ul li {
+    list-style: none;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-left: 5px solid rgb(161, 98, 98);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#view-feedback ul li b {
+    font-weight: bold;
+    color: rgb(161, 98, 98);
+}
+
+#view-feedback ul li p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+#view-feedback ul li small {
+    color: #555;
+    font-size: 0.85rem;
+}

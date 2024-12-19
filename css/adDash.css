@@ -1,0 +1,124 @@
+body {
+    background-image: url('../images/admin.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.sidebar {
+    height: 100vh;
+    width: 220px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 33, 71, 0.95);
+    padding-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover, .sidebar a.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.main-content {
+    margin-left: 240px;
+    padding: 30px;
+    flex-grow: 1;
+    color: white;
+}
+
+footer {
+    background-color: rgba(0, 33, 71, 0.95);
+    text-align: center;
+    font-size: medium;
+    padding: 10px;
+    color: white;
+    margin-top: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.main-content {
+    margin-left: 240px;
+    padding: 30px;
+    flex-grow: 1;
+    color: white;
+}
+
+.table-responsive {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card, .bar-container {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 8px;
+    margin-bottom: 40px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card h3, .bar-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: navy;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding: 15px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.chart-container {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#summaryBarChart {
+    max-width: 400px;
+    height: 300px;
+}

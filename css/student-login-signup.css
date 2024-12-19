@@ -1,0 +1,151 @@
+/* General Styles */
+/* General Styles */
+
+
+nav {
+    position: fixed; /* Keeps the nav bar at the top of the page */
+    top: 0;
+    left: 0;
+    width: 95%; /* Full width of the viewport */
+    display: flex;
+    justify-content: space-between; /* Space between logo and links */
+    align-items: center; /* Vertically center content */
+    padding: 10px 45px;
+    background-color: rgba(161, 98, 98, 0.85); /* Reduced transparency */
+    z-index: 1000; /* Ensure it stays on top */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Logo Styling */
+.logo h1 {
+    font-size: 28px;
+}
+
+.nav-links {
+    justify-content: space-between;
+    align-items: end;
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero-section h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
+
+
+/* Toggle Buttons */
+.toggle-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn-toggle {
+    background-color: #6d7d7e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-toggle.active {
+    background-color: #6d7d7e;
+}
+
+.btn-toggle:hover {
+    background-color: rgba(161, 98, 98, 0.85);
+}
+
+/* Login and Signup Form Styles */
+.form-container {
+    max-width: 400px;
+    background-color: rgba(128, 128, 128, 0.573);
+    margin-top: auto;
+   margin-bottom: 65px;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form-box {
+    display: block;
+}
+
+.form-box.active {
+    display: block;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color:white;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+    color: black;
+    font-weight: bold;
+    font-size: large;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-login {
+    background-color: #6d7d7e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.btn-login:hover {
+    background-color: rgba(161, 98, 98, 0.85);
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+    background-color: rgba(161, 98, 98, 0.7);
+    color:black;
+    font-size: large;
+    font-weight: bold;
+}

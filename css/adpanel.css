@@ -1,0 +1,185 @@
+ /* General Styles */
+ body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flexbox;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: #1a1b1c;
+    color: #fff;
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.sidebar .nav-link {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #49505768;
+    border-radius: 5px;
+}
+
+.sidebar .nav-link.active {
+    background-color: rgba(161, 98, 98, 0.7);
+    border-radius: 5px;
+}
+
+/* Main Content Styles */
+.main-content {
+margin-left: 250px; /* Offset for sidebar */
+padding: 20px;
+max-width: 100%;
+background-color: #ffffff;
+background-image: url('../images/adminpanel.jpg'); /* Replace with your image path */
+background-size: cover; /* Cover the entire area */
+background-position: center; /* Center the image */
+background-repeat: no-repeat; /* Prevent repetition */
+overflow-y: auto;
+height: 100vh; /* Full viewport height */
+}
+
+.section-card {
+    display: none;
+    
+}
+
+.p{
+    color: white;
+    }
+
+
+.section-card.active {
+    display: block;
+    color: rgba(128, 128, 128, 0.655);
+}
+
+/* Dashboard Cards */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    margin-bottom: 20px;
+    background-color:rgba(128, 128, 128, 0.758);
+    color: white;
+    
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-body {
+    padding: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.card-title {
+    font-size: 18px;
+    color: #fffafa;
+}
+
+.card-text {
+    
+    font-weight: bold;
+    font-size: larger;
+    color: blue;
+}
+
+.small.text-muted{
+    color: white!important;
+    font-size: large;
+    font-weight: bold;
+}
+.text-muted{
+    color: white!important;
+}
+
+
+    .list-group-item {
+    font-size: 16px;
+}
+
+
+/* Progress Bars */
+.progress {
+    height: 20px;
+    border-radius: 10px;
+}
+
+.progress-bar {
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.998);
+}
+
+/* Table Styles */
+.table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.table th {
+    padding: 15px;
+    text-align: left;
+    color:white;
+    font-size: larger;
+}
+.table td{
+    font-weight: bolder;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9f6;
+    color:black;
+}
+
+.form-group{
+    color: white;
+    font-weight: bolder;
+}
+
+p {
+    color: white;
+    font-size: large;
+ }
+ .btn-primary{
+    background-color: grey;
+ }
+ .btn-primary:hover{
+    background-color: rgba(161, 98, 98, 0.7);
+ }
+
+ .footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+    background-color: rgba(161, 98, 98, 0.7);
+    color:black;
+    font-size: large;
+    font-weight: bold;
+}
